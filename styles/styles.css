@@ -1,9 +1,12 @@
 body{
     background-color: aliceblue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 #title{
     text-align: center;
+}
+#title h1{
+    font-size: 36px;
 }
 #nav {
     display: flex;
@@ -24,4 +27,31 @@ body{
 .links{
     margin: 10px 10px;
     text-decoration: none;
+}
+.notes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container{
+    background-color: rgb(127, 169, 255);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 500px;
+    color: white;
+}
+.container h4{
+    text-align: center;
+    font-size: 20px;
+}
+footer p {
+    text-align: center;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
