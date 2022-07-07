@@ -25,3 +25,30 @@ body{
     margin: 10px 10px;
     text-decoration: none;
 }
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 75px;
+}
+
+#buttons button{
+    
+    background-color: rgb(50, 50, 210);
+    color: ivory;
+    box-shadow: 0 12px 0 navy;
+    border: none;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+#buttons button:active{
+    box-shadow: none;
+    transform: translateY(12px);
+    transition: 100ms;
+}
+
