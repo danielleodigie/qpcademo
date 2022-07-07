@@ -1,6 +1,7 @@
 body{
     background-color: aliceblue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: "DINNextRoundedLTW01-Regular"; 
+    margin: 0%;
 }
 #title{
     text-align: center;
@@ -8,27 +9,38 @@ body{
 #title h1{
     font-size: 36px;
 }
-#nav {
+.nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: skyblue;
+    background-color: rgb(50, 50, 210);
+    padding: 1em;
 }
-#nav_options{
+
+
+.nav_options{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 10px;
+    color: white;
 }
-#homelink{
+.homelink{
     font-size: 24px;
     font-weight: 500;
+    text-decoration: none;
+    color: ivory;
 }
 .links{
     margin: 10px 10px;
     text-decoration: none;
+    color: ivory;
 }
 
+.links a:visted{
+    text-decoration: none;
+    color: aliceblue;
+}
 #buttons{
     display: flex;
     justify-content: center;
@@ -36,7 +48,7 @@ body{
     gap: 75px;
 }
 
-#buttons button{
+.button{
     
     background-color: rgb(50, 50, 210);
     color: ivory;
@@ -45,11 +57,12 @@ body{
     padding: 25px;
     border-radius: 10px;
     font-size: 20px;
-    text-transform: uppercase;
+    font-family: "DINNextRoundedLTW01-Regular";
+    text-decoration: none;
 }
 
 
-#buttons button:active{
+.button a:active{
     box-shadow: none;
     transform: translateY(12px);
     transition: 100ms;
@@ -60,12 +73,12 @@ body{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 1em;
 }
 .container{
     background-color: rgb(127, 169, 255);
     padding: 20px;
     border-radius: 10px;
-    margin: 10px;
     max-width: 500px;
     color: white;
 }
@@ -82,3 +95,53 @@ footer p {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+@font-face {
+    font-family: "DINNextRoundedLTW01-Regular"; 
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot"); 
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg"); 
+  }
+
+footer{
+    padding: 1em;
+    background-color: rgb(50, 50, 210);
+    color: ivory;
+    margin-top: 20px;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: ivory;
+}
+
+footer a:visited{
+    color: aliceblue;
+}
+
+footer ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    transition: 400ms;
+    color: rgb(72, 89, 106);
+}
+
+a:visited{
+    color: ivory;
+}
+
+a:visited:hover{
+    transition: 400ms;
+    color: rgb(142, 158, 174);
+}
+  

@@ -5,17 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classical PCA</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <header>
         <nav >
-            <ul id="nav">
-                <li id="homelink"><a href="/">IBM Group</a></li>
-                <li><a href="pages/classicalpca.html">Classical PCA</a></li>
-                <li><a href="pages/quantumpca.html">Quantum PCA</a></li>
-            </ul>
+            <div class="nav">
+                <a class="homelink" class="links" href="/">IBM Group</a>
+                <div class="nav_options">
+                    <a class="links" href="classicalpca.html">Classical PCA</a>
+                    <a class="links" href="quantumpca.html">Quantum PCA</a>
+                </div>
+            </div>
         </nav>
     </header>
+    <div id="title">
+        <h1>Classical PCA</h1>
+        <h3>a cute little overview</h3>
+    </div>
+    <div class="notes">
+        <div class="container">
+            <h4>What is PCA?</h4>
+            <p>PCA Step by Step:</p>
+            <ul>
+                <li><p>First step is to centralize the matrix, we do this by subtracting each column of the matrix by its mean. This will help us work center of our data rather than just working from the origin.</p></li>
+                <li><p>Computing the covariance matrix: Next we compute the covariance matrix by variable, i.e. each column’s variance will be compared other column’s variances and itself.</p></li>
+                <li><p>Find the eigenvalues and eigenvectors of our covariance matrix: using numpy, we compute the eigenvalues and vectors from our matrix. Notice that we get 1 eigenvalue per variable and each eigenvalue represents the amount of importance of said variable. The eigenvectors represent our principal component planes. We will store our vectors in a matrix.
+                </p></li>
+                <li><p>Organizing eigenvalues and eigenvectors. We organize the eigenvalues and vectors in descending order, based on the highest eigenvalue.</p></li>
+                <li><p>Finally we project our data into the principal components by multiplying our matrix with the eigenvector matrix.</p></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>"Another day, another slay"</p>
+        <ul class="contact">
+            <li><a href="#">h</a></li>
+            <li><a href="#">h</a></li>
+            <li><a href="#">h</a></li>
+            <li><a href="#">h</a></li>
+            <li><a href="#">h</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
