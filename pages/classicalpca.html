@@ -13,20 +13,34 @@
             <div class="nav">
                 <a href="/"class="homelink" class="links" ><img src="images/us.png" height="100px" id="img"/></a>
                 <div class="nav_options">
-                    <a class="links" href="classicalpca.html">Classical PCA</a>
-                    <a class="links" href="quantumpca.html">Quantum PCA</a>
+                    <a class="links" href="/pages/classicalpca.html">Classical PCA</a>
+                    <a class="links" href="/pages/quantumpca.html">Quantum PCA</a>
                 </div>
             </div>
         </nav>
     </header>
     <div id="title">
         <h1>Classical PCA</h1>
-        <h3>a cute little overview</h3>
+        <h3>How to use PCA on a classical computer</h3>
     </div>
     <div class="notes">
         <div class="container">
             <h4>What is PCA?</h4>
-            <p>PCA Step by Step:</p>
+            <p>
+                Principal Component Analysis is a data analysis method that allows you to reduce the size of your data based on its principal components.
+                This computation is done based on the eigenvalues (which represent the impact of a variable) and the eigenvector (which represent the principal components) of the data matrix.
+            </p>
+        </div>
+        <div class="container">
+            <h4>Why PCA?</h4>
+            <p>
+                <ul>
+                    <li>PCA helps make multidimensional data easier to visualize by reducing the amount of components to those that have bigger impacts in the resulting data.</li>
+                </ul>
+            </p>
+        </div>
+        <div class="container">
+            <h4>PCA Step by Step:</h4>
             <ul>
                 <li><p>First step is to centralize the matrix, we do this by subtracting each column of the matrix by its mean. This will help us work center of our data rather than just working from the origin.</p></li>
                 <li><p>Computing the covariance matrix: Next we compute the covariance matrix by variable, i.e. each column’s variance will be compared other column’s variances and itself.</p></li>
