@@ -24,38 +24,40 @@
         <h3>our battle against qubits themselves</h3>
     </div>
     <div class="notes">
-            
         <div class="container">
-            <h4>Goals</h4>
-            <p>Our goals for this project were to:</p>
+            <h4>Quantum Advantage of QPCA</h4>
             <ul>
-                <li><p>Read through and understand the LMR paper</p></li>
-                <li><p>Understand Classical PCA and implement it in Python</p></li>
-                <li><p>Find a way to use quantum resources to implement PCA</p></li>
+                <li><p>The advantage of using qPCA is that it is efficient in revealing the eigenvectors and eigenvalues of unknown low rank density matrices, a practice hard to do with classical PCA.</p></li>
+                <li><p>qPCA reduces the method time, O,  by a factor of the whole size.</p></li>
+                <li><p> O(Rslog(s)) —> O(Rlog(s))</p></li>
+                <li><p> The revelation of eigenvectors with corresponding eigenvalues allows us to interact with the matrices more. For example, if a matrix models an electronic system, we are able to simulate chemical or physical properties if we also know its ground state. Such simulation properties include: correlation functions, state to state transitions, and chemical reactions. This is done by observing the corresponding eigenvectors of the matrix calculated.</p></li>
+                <li><p>qPCA will be another tool used to speed up machine learning during clustering and pattern recognition, representing and analyzing large amounts of high dimensional data.</p></li>
+                <li><p>qPCA is also helpful in state discrimination and assignment. It is a process that can take 2 given matrix states and a new state. It assigns the new state to one of the given states depending on if it is positive or negative exponentially faster.</p></li>
             </ul>
         </div>
         <div class="container">
-            <h4>Links</h4>
+            <h4>Trial and Error with VQE</h4>
             <ul>
-                <li><p><a href="https://github.com/Lementknight/QxQ_qPCA_Project" target="_blank">GitHub Repo!</a></p></li>
-                <li><p><a href="https://www.nature.com/articles/nphys3029" target="_blank">LMR Paper</a></p></li>
-                <li><p><a href="https://arxiv.org/pdf/1904.05803.pdf" target="_blank">Martin Paper with original QPCA Code</a></p></li>
+                <li><p>When we were first given the assignment we wanted to follow the theoretical structure given by the paper. But after deep investigation we discovered that it was not possible to employ the method in the LMR paper because it needed Quantum Ram to work. This does not exist yet. Our next approach was adding VQE to a classical PCE. As you know VQE solves for the minimum eigenvalue of a given energy system. Before, we used the maximum sum of squared distances to get the eigenvalues. However, solving for the maximum / minimum serves the same purpose because of the pythagorean theorem, it just takes a longer computing time to get the minimum. As we tried to implement VQE we faced the challenge of mapping any data set to an energy system such that the hamiltonian can compute it. With more time we could have figured it out, but we decided to look for another option. This is when we decided to use Quantum Phase Estimation instead. </p></li>
             </ul>
         </div>
         <div class="container">
-            <h4>Links</h4>
+            <h4>Quantum PCA Step by Step</h4>
             <ul>
-                <li><p><a href="https://github.com/Lementknight/QxQ_qPCA_Project" target="_blank">GitHub Repo!</a></p></li>
-                <li><p><a href="https://www.nature.com/articles/nphys3029" target="_blank">LMR Paper</a></p></li>
-                <li><p><a href="https://arxiv.org/pdf/1904.05803.pdf" target="_blank">Martin Paper with original QPCA Code</a></p></li>
+                <li><p>We were able to make the state vector portion of the code into a function such that we can compute QPCA for any 4 x 4 matrix of information. We then compared our results with the QPCA and PCA and received the same results.</p></li>
+                <li><p>Step 1- We initialize our system in a random state.</p></li>
+                <li><p>Step 2 - We run it through the quantum circuit</p></li>
+                <li><p>Step 3 - We take the two points from the counts dictionary that represent the majority of the data</p></li>
+                <li><p>Step 4 - We apply those probabilities into the QPE</p></li>
+                <li><p>Step 5 - </p></li>
             </ul>
         </div>
         <div class="container">
-            <h4>Links</h4>
+            <h4>Future Steps</h4>
             <ul>
-                <li><p><a href="https://github.com/Lementknight/QxQ_qPCA_Project" target="_blank">GitHub Repo!</a></p></li>
-                <li><p><a href="https://www.nature.com/articles/nphys3029" target="_blank">LMR Paper</a></p></li>
-                <li><p><a href="https://arxiv.org/pdf/1904.05803.pdf" target="_blank">Martin Paper with original QPCA Code</a></p></li>
+                <li><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ea, harum cumque nobis consequuntur libero!</p></li>
+                <li><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid libero sapiente, accusamus nam pariatur.</p></li>
+                
             </ul>
         </div>
     </div>
@@ -66,8 +68,8 @@
     <footer>
         <p>"Another day, another slay"</p>
         <ul class="contact">
-            <li><a href="#">h</a></li>
-            <li><a href="#">h</a></li>
+            <li><a href="https://www.linkedin.com/in/yelissa-lopez-b90a0218b/ " target="_blank">Yelissa's Linkedin</a></li>
+            <li><a href="https://www.linkedin.com/in/danielleodigie101/" target="_blank">Danielle's Linkedin</a></li>
             <li><a href="#">h</a></li>
             <li><a href="#">h</a></li>
             <li><a href="#">h</a></li>
