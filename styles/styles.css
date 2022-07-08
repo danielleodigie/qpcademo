@@ -78,7 +78,7 @@ body{
 }
 .container{
     display:inline-block;
-    background-color: rgb(0, 42, 128);
+    background-color: rgb(50, 50, 210);
     padding: 20px;
     border-radius: 10px;
     max-width: 500px;
@@ -93,8 +93,9 @@ footer p {
     text-align: center;
 }
 .container:hover{
-    background-color: rgb(1, 66, 195);
+    background-color: rgb(64, 64, 248);
     border-radius: 20px;
+    box-shadow: ;
 }
 
 .contact{
