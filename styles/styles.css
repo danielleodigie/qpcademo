@@ -76,6 +76,7 @@ body{
     gap: 1em;
 }
 .container{
+    display:inline-block;
     background-color: rgb(127, 169, 255);
     padding: 20px;
     border-radius: 10px;
@@ -110,7 +111,7 @@ footer{
     padding: 1em;
     background-color: rgb(50, 50, 210);
     color: ivory;
-    margin-top: 20px;
+    margin-top: 30px;
     
 }
 
@@ -122,7 +123,9 @@ footer a{
 footer a:visited{
     color: aliceblue;
 }
-
+footer p{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
 footer ul{
     list-style: none;
 }
@@ -144,4 +147,16 @@ a:visited:hover{
     transition: 400ms;
     color: rgb(142, 158, 174);
 }
-  
+.notes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:50px
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin: 20px; */
+} 
