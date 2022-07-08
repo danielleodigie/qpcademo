@@ -84,6 +84,7 @@ body{
     max-width: 500px;
     color: white;
     transition: 200ms;
+    box-shadow: none;
 }
 .container h4{
     text-align: center;
@@ -95,7 +96,7 @@ footer p {
 .container:hover{
     background-color: rgb(64, 64, 248);
     border-radius: 20px;
-    box-shadow: ;
+    box-shadow: inset 0px 0px 3px black;
 }
 
 .contact{
@@ -125,7 +126,6 @@ footer{
 
 footer a{
     text-decoration: none;
-    color: ivory;
 }
 
 footer a:visited{
@@ -140,7 +140,7 @@ footer ul{
 
 a{
     text-decoration: none;
-
+    color: ivory;
 }
 a:hover{
     transition: 400ms;
