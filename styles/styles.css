@@ -1,6 +1,7 @@
 body{
     background-color:rgb(28, 31, 32);
     font-family: "DINNextRoundedLTW01-Regular"; 
+    color: white;
     margin: 0%;
 }
 #title{
@@ -82,6 +83,7 @@ body{
     border-radius: 10px;
     max-width: 500px;
     color: white;
+    transition: 200ms;
 }
 .container h4{
     text-align: center;
@@ -90,6 +92,11 @@ body{
 footer p {
     text-align: center;
 }
+.container:hover{
+    background-color: rgb(1, 66, 195);
+    border-radius: 20px;
+}
+
 .contact{
     display: flex;
     flex-direction: row;
