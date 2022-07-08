@@ -43,8 +43,8 @@
         <div class="container">
             <h4>PCA Step by Step:</h4>
             <ul>
-                <li><p>First step is to centralize the matrix, we do this by subtracting each column of the matrix by its mean. This will help us work center of our data rather than just working from the origin.</p></li>
-                <li><p>Computing the covariance matrix: Next we compute the covariance matrix by variable, i.e. each column’s variance will be compared other column’s variances and itself.</p></li>
+                <li><p>First step is to centralize the matrix, we do this by subtracting each column of the matrix by its mean. This will help us center of our data rather than just working from the origin.</p></li>
+                <li><p>Computing the covariance matrix: Next we compute the covariance matrix by variable, i.e. each column’s variance will be compared to other column’s variances and itself.</p></li>
                 <li><p>Find the eigenvalues and eigenvectors of our covariance matrix: using numpy, we compute the eigenvalues and vectors from our matrix. Notice that we get 1 eigenvalue per variable and each eigenvalue represents the amount of importance of said variable. The eigenvectors represent our principal component planes. We will store our vectors in a matrix.
                 </p></li>
                 <li><p>Organizing eigenvalues and eigenvectors. We organize the eigenvalues and vectors in descending order, based on the highest eigenvalue.</p></li>
