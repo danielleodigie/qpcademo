@@ -28,8 +28,7 @@
         <div class="container">
             <h4>What is PCA?</h4>
             <p>
-                Principal Component Analysis is a data analysis method that allows you to reduce the size of your data based on its principal components.
-                This computation is done based on the eigenvalues (which represent the impact of a variable) and the eigenvector (which represent the principal components) of the data matrix.
+                Principal Component Analysis is a data analysis method that allows you to reduce the size of your data based on its principal components. This computation is done based on the eigenvalues (which represent the impact of a variable) and the eigenvectors (which represent the principal components) of the data matrix.
             </p>
         </div>
         <div class="container">
@@ -47,14 +46,14 @@
                 <li><p>Computing the covariance matrix: Next we compute the covariance matrix by variable, i.e. each column’s variance will be compared to other column’s variances and itself.</p></li>
                 <li><p>Find the eigenvalues and eigenvectors of our covariance matrix: using numpy, we compute the eigenvalues and vectors from our matrix. Notice that we get 1 eigenvalue per variable and each eigenvalue represents the amount of importance of said variable. The eigenvectors represent our principal component planes. We will store our vectors in a matrix.
                 </p></li>
-                <li><p>Organizing eigenvalues and eigenvectors. We organize the eigenvalues and vectors in descending order, based on the highest eigenvalue.</p></li>
+                <li><p>We organize the eigenvalues and vectors in descending order, based on the highest eigenvalue.</p></li>
                 <li><p>Finally we project our data into the principal components by multiplying our matrix with the eigenvector matrix.</p></li>
             </ul>
         </div>
     </div>
     <div id="buttons">
         <a href="/" class="button">Home</a>
-        <a href="/pages/quantumpca.html" class="button">Quantum PCA</a>
+        <a href="quantumpca.html" class="button">Quantum PCA</a>
     </div>
     <footer>
         <p>"Q-ute PCA for the slay"</p>
